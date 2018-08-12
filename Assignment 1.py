@@ -28,16 +28,16 @@ teachers_per_school_urban=np.zeros((36,1),float)
 teachers_per_school_combined=np.zeros((36,1),float)
 j,r,u,t=0
 while(j<108):
-    if(j%3==0):
+    if(j%3==0)
         teachers_per_school_rural[r]=teachers_per_school[j]
-                r+=1
-        if(j%3==1):
-                teachers_per_school_urban[u]=teachers_per_school[j]
-                u+=1
-        if(j%3==2):
-                teachers_per_school_combined[t]=teachers_per_school[j]
-                t+=1
-        j+=1
+        r+=1
+    if(j%3==1):
+        teachers_per_school_urban[u]=teachers_per_school[j]
+        u+=1
+    if(j%3==2):
+        teachers_per_school_combined[t]=teachers_per_school[j]
+        t+=1
+    j+=1
 #hist for rural
 plt.xlabel("number of teachers per rural school")
 plt.ylabel("number of states")
