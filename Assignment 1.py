@@ -41,7 +41,7 @@ while(j<108):
 #hist for rural
 plt.xlabel("number of teachers per rural school")
 plt.ylabel("number of states")
-plt.title("number of states with a number per pre-primary school")
+plt.title("number of states with a number per rural pre-primary school")
 plt.hist(teachers_per_school_rural,bins='auto',histtype='bar',rwidth=0.3)
 plt.show()
 #hist for urban
