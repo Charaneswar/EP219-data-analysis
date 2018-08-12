@@ -28,7 +28,7 @@ teachers_per_school_urban=np.zeros((36,1),float)
 teachers_per_school_combined=np.zeros((36,1),float)
 j,r,u,t=0,0,0,0
 while(j<108):
-    if(j%3==0)
+    if(j%3==0):
         teachers_per_school_rural[r]=teachers_per_school[j]
         r+=1
     if(j%3==1):
