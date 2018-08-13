@@ -22,7 +22,7 @@ while(i<108):
     i+=1
 #adding a column to data array which shows total number of teachers per pre-primary school
 new_array=np.column_stack([data_array,teachers_per_school])
-#creating array to store eachers_per_school in rural,urban,combined
+#creating array to store teachers_per_school in rural,urban,combined
 teachers_per_school_rural=np.zeros((36,1),float)
 teachers_per_school_urban=np.zeros((36,1),float)
 teachers_per_school_combined=np.zeros((36,1),float)
@@ -51,9 +51,9 @@ plt.title("number of states with a number per urban pre-primary school")
 plt.hist(teachers_per_school_urban,bins=15,histtype='bar',rwidth=0.7)
 plt.show()
 #hist for combined
-plt.xlabel("number of teachers per combined school")
+plt.xlabel("number of teachers per school(combined)")
 plt.ylabel("number of states")
-plt.title("number of states with a number per combined pre-primary school")
+plt.title("number of states with a number per pre-primary school(combined)")
 plt.hist(teachers_per_school_combined,bins=15,histtype='bar',rwidth=0.7)
 plt.show()
 
