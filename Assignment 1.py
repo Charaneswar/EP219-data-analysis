@@ -42,18 +42,18 @@ while(j<108):
 plt.xlabel("number of teachers per rural school")
 plt.ylabel("number of states")
 plt.title("number of states with a number per rural pre-primary school")
-plt.hist(teachers_per_school_rural,bins='auto',histtype='bar',rwidth=0.3)
+plt.hist(teachers_per_school_rural,bins=15,histtype='bar',rwidth=0.7)
 plt.show()
 #hist for urban
 plt.xlabel("number of teachers per urban school")
 plt.ylabel("number of states")
 plt.title("number of states with a number per urban pre-primary school")
-plt.hist(teachers_per_school_urban,bins='auto',histtype='bar',rwidth=0.3)
+plt.hist(teachers_per_school_urban,bins=15,histtype='bar',rwidth=0.7)
 plt.show()
 #hist for combined
 plt.xlabel("number of teachers per combined school")
 plt.ylabel("number of states")
 plt.title("number of states with a number per combined pre-primary school")
-plt.hist(teachers_per_school_combined,bins='auto',histtype='bar',rwidth=0.3)
+plt.hist(teachers_per_school_combined,bins=15,histtype='bar',rwidth=0.7)
 plt.show()
 
