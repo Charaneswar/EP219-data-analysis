@@ -4,15 +4,19 @@ import numpy as np
 import array as arr
 import dis
 import math
+#extracting data to a numpy array 
 data=pd.read_excel('swachhbharat.xlsx')
 data_array=data.values
 i=0
+#defining an array of fraction of ODF villages
 odf_frac_UP=[]
+#assigning values to the array
 while(i<6871):
 	if(data_array[i,0]=='Uttar Pradesh'):
 		odf_frac_UP.append((data_array[i,5])/(data_array[i,4]))
 	i+=1
 j=odf_frac_UP.__len__()
+#function to find the mean
 def mean_val(ar):
 	s=0
 	for i in range(0,j-1):
@@ -20,6 +24,7 @@ def mean_val(ar):
 	mn=s/j
 	return mn
 mn=mean_val(odf_frac_UP)
+#function to find the standard deviation
 def std_dev(ar):
 	s=0
 	for i in range(0,j-1):
@@ -27,8 +32,10 @@ def std_dev(ar):
 	sd=math.sqrt(s/(j-1))
 	return sd
 sd=std_dev(odf_frac_UP)
+#restricting the mean and standard deviation to 2 decimal places
 mn=mn-(mn%0.01)
 sd=sd-(sd%0.01)
+#ploting the histogram
 f1=plt.figure(1)
 tx1=f1.add_subplot(111)
 f1.subplots_adjust(top=0.85)
